@@ -1,0 +1,46 @@
+.modal-window, .modal-overlay{
+    opacity: 0;
+    z-index: -1;
+}
+
+.modal.open .modal-overlay,
+.modal.open .modal-window{
+    opacity: 1;
+    z-index: 1000;
+}
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-window{
+    width: 600px;
+    border-radius: 10px;
+    background: #fff;
+    margin: 100px auto;
+    height: 300px;
+    background-color: rgb(154, 170, 177);
+}
+.modal-close{
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: right;
+}
+
+.modal-textinput{
+    border: none;
+    outline: none;
+    resize: none;
+    overflow: auto;
+    width: 60%;
+    height: 30px;
+    padding: 5px 20px;
+    vertical-align: middle;
+    margin: 10px 0 10px 30px;
+}
